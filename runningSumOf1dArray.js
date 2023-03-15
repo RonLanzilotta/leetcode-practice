@@ -1,13 +1,12 @@
-let nums = [1, 2, 3, 4]
+let nums = [3, 1, 2, 10, 1]
 
-function sum(i, j) {
-    for (let j = 0; j < nums.length; j++) {
-        let j = i + 1
-        let currentSum = nums[i] + nums[j]
-
+const runningSum = function(arr) {
+    let output = [];
+    output[0] = arr[0]
+    for (let i = 1; i < arr.length; i++) {
+        output[i] = output[i - 1] + arr[i]
     }
-    console.log()
+    return output;
 }
 
-
-nums.forEach(sum)
+console.log(runningSum(nums))
