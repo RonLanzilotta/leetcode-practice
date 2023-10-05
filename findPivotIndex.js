@@ -4,7 +4,7 @@ function findPivot(arr) {
 
     let leftSum = 0; 
     let rightSum = 0;
-    
+
     for (let pivotIndex = 0; pivotIndex < arr.length; pivotIndex++){
         for (let i = 0; i < arr.length; i++) {
 
@@ -29,4 +29,4 @@ function findPivot(arr) {
     return -1
 }
 
-console.log(findPivot(input))
+findPivot(input)
